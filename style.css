@@ -8,7 +8,7 @@
 }
 .box:hover .element2 {
   display: flex;
-  transform: translateX(-100%);
+  transform: translateX(0);
   transition: transform 600ms;
 }
 .box:hover .element2 i {
@@ -16,7 +16,7 @@
   transition: transform 600ms;
 }
 .box:not(:hover) .element2 {
-  transform: translateX(0);
+  transform: translateX(100%);
 }
 .box:not(:hover) .element2 i {
   transform: rotate(0deg);
@@ -33,4 +33,10 @@
 .box .element2 i {
   font-size: 50px;
   color: greenyellow;
+}
+.box .masque {
+  position: absolute;
+  width: 150px;
+  height: 200px;
+  background-color: blue;
 }/*# sourceMappingURL=style.css.map */

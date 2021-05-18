@@ -9,7 +9,7 @@
     &:hover {
         .element2 {
             display   : flex;
-            transform : translateX(-100%);
+            transform : translateX(0);
             transition: transform 600ms;
 
             i {
@@ -21,7 +21,7 @@
 
     &:not(:hover) {
         .element2 {
-            transform: translateX(0);
+            transform: translateX(100%);
 
             i {
                 transform : rotate(0deg);
@@ -44,5 +44,12 @@
             font-size: 50px;
             color    : greenyellow;
         }
+    }
+
+    .masque {
+        position        : absolute;
+        width           : 150px;
+        height          : 200px;
+        background-color: blue;
     }
 }
