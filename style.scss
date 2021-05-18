@@ -5,6 +5,7 @@
     grid-template-columns: auto 150px;
     background-color     : green;
     align-items          : center;
+    overflow: hidden;
 
     &:hover {
         .element2 {
