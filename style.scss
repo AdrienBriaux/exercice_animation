@@ -6,14 +6,17 @@
     background-color     : green;
     align-items          : center;
     overflow             : hidden;
+    margin: auto;
 
     &:hover {
         .element2 {
             display  : flex;
-            animation: check-translate 1000ms;
+           transform: translateX(0);
+           transition: 2s ease-in-out;
 
             i {
-                animation: check-rotate 3000ms;
+                transform: rotate(900deg);
+                transition: 4s;
             }
         }
     }
@@ -21,9 +24,11 @@
     &:not(:hover) {
         .element2 {
             transform: translateX(100%);
+            transition: 2s ease-in-out;
 
             i {
-                transition: transform 600ms;
+                transform: rotate(0);
+                transition: 4s;
             }
         }
     }
@@ -42,24 +47,4 @@
         }
     }
 
-}
-
-@keyframes check-translate {
-    0% {
-        transform: translateX(100%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-
-@keyframes check-rotate {
-    0% {
-        transform: rotate(0);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
 }

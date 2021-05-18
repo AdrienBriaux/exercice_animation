@@ -6,21 +6,24 @@
   background-color: green;
   align-items: center;
   overflow: hidden;
+  margin: auto;
 }
 .box:hover .element2 {
   display: flex;
-  -webkit-animation: check-translate 1000ms;
-          animation: check-translate 1000ms;
+  transform: translateX(0);
+  transition: 2s ease-in-out;
 }
 .box:hover .element2 i {
-  -webkit-animation: check-rotate 3000ms;
-          animation: check-rotate 3000ms;
+  transform: rotate(900deg);
+  transition: 4s;
 }
 .box:not(:hover) .element2 {
   transform: translateX(100%);
+  transition: 2s ease-in-out;
 }
 .box:not(:hover) .element2 i {
-  transition: transform 600ms;
+  transform: rotate(0);
+  transition: 4s;
 }
 .box .element2 {
   background-color: red;
@@ -33,38 +36,4 @@
 .box .element2 i {
   font-size: 50px;
   color: greenyellow;
-}
-
-@-webkit-keyframes check-translate {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-@keyframes check-translate {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-@-webkit-keyframes check-rotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes check-rotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }/*# sourceMappingURL=style.css.map */
