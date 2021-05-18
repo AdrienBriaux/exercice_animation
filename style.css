@@ -1,0 +1,26 @@
+.box {
+  width: 700px;
+  height: 200px;
+  display: grid;
+  grid-template-columns: auto 150px;
+  background-color: green;
+  align-items: center;
+}
+.box:hover .element2 {
+  display: flex;
+}
+.box:not(:hover) .element2 {
+  display: none;
+}
+.box .element2 {
+  background-color: red;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 25px;
+}
+.box .element2 i {
+  font-size: 50px;
+  color: greenyellow;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,35 @@
+.box {
+    width                : 700px;
+    height               : 200px;
+    display              : grid;
+    grid-template-columns: auto 150px;
+    background-color     : green;
+    align-items          : center;
+
+    &:hover {
+        .element2 {
+            display: flex;
+        }
+    }
+
+    &:not(:hover) {
+        .element2 {
+            display: none;
+        }
+    }
+
+    .element2 {
+        background-color: red;
+        height          : 100%;
+        display         : flex;
+        align-items     : center;
+        justify-content : flex-end;
+        padding         : 0 25px;
+
+
+        i {
+            font-size: 50px;
+            color    : greenyellow;
+        }
+    }
+}
