@@ -2,7 +2,7 @@
     width                : 700px;
     height               : 200px;
     display              : grid;
-    grid-template-columns: auto 150px;
+    grid-template-columns: 700px 150px;
     background-color     : green;
     align-items          : center;
     overflow             : hidden;
@@ -11,7 +11,7 @@
     &:hover {
         .element2 {
             display  : flex;
-           transform: translateX(0);
+           transform: translateX(-100%);
            transition: 2s ease-in-out;
 
             i {
@@ -23,7 +23,7 @@
 
     &:not(:hover) {
         .element2 {
-            transform: translateX(100%);
+            transform: translateX(0);
             transition: 2s ease-in-out;
 
             i {
