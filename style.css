@@ -9,12 +9,13 @@
 }
 .box:hover .element2 {
   display: flex;
-  transform: translateX(0);
-  transition: transform 600ms;
+  -webkit-animation: check-translate 1000ms;
+          animation: check-translate 1000ms;
 }
 .box:hover .element2 i {
   transform: rotate(360deg);
-  transition: transform 600ms;
+  -webkit-animation: check-rotate 3000ms;
+          animation: check-rotate 3000ms;
 }
 .box:not(:hover) .element2 {
   transform: translateX(100%);
@@ -30,8 +31,6 @@
   align-items: center;
   justify-content: flex-end;
   padding: 0 25px;
-  -webkit-animation: check-translate 3000ms;
-          animation: check-translate 3000ms;
 }
 .box .element2 i {
   font-size: 50px;
@@ -53,5 +52,21 @@
   }
   100% {
     transform: translateX(0);
+  }
+}
+@-webkit-keyframes check-rotate {
+  0% {
+    transform: rotate(100%);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes check-rotate {
+  0% {
+    transform: rotate(100%);
+  }
+  100% {
+    transform: rotate(0);
   }
 }/*# sourceMappingURL=style.css.map */

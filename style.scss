@@ -9,13 +9,12 @@
 
     &:hover {
         .element2 {
-            display   : flex;
-            transform : translateX(0);
-            transition: transform 600ms;
+            display  : flex;
+            animation: check-translate 1000ms;
 
             i {
                 transform : rotate(360deg);
-                transition: transform 600ms;
+                animation: check-rotate 3000ms;
             }
         }
     }
@@ -38,9 +37,6 @@
         align-items     : center;
         justify-content : flex-end;
         padding         : 0 25px;
-        animation       : check-translate 3000ms;
-
-
 
         i {
             font-size: 50px;
@@ -57,5 +53,15 @@
 
     100% {
         transform: translateX(0);
+    }
+}
+
+@keyframes check-rotate {
+    0% {
+        transform: rotate(100%);
+    }
+
+    100% {
+        transform: rotate(0);
     }
 }
