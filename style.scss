@@ -5,7 +5,7 @@
     grid-template-columns: auto 150px;
     background-color     : green;
     align-items          : center;
-    overflow: hidden;
+    overflow             : hidden;
 
     &:hover {
         .element2 {
@@ -38,6 +38,7 @@
         align-items     : center;
         justify-content : flex-end;
         padding         : 0 25px;
+        animation       : check-translate 3000ms;
 
 
 
@@ -47,10 +48,14 @@
         }
     }
 
-    .masque {
-        position        : absolute;
-        width           : 150px;
-        height          : 200px;
-        background-color: blue;
+}
+
+@keyframes check-translate {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
     }
 }
