@@ -8,16 +8,25 @@
 
     &:hover {
         .element2 {
-            display: flex;
-            transform: translateX(-100%);
+            display   : flex;
+            transform : translateX(-100%);
             transition: transform 600ms;
+
+            i {
+                transform : rotate(360deg);
+                transition: transform 600ms;
+            }
         }
     }
 
     &:not(:hover) {
         .element2 {
-            display: none;
             transform: translateX(0);
+
+            i {
+                transform : rotate(0deg);
+                transition: transform 600ms;
+            }
         }
     }
 
@@ -28,7 +37,7 @@
         align-items     : center;
         justify-content : flex-end;
         padding         : 0 25px;
-        
+
 
 
         i {
