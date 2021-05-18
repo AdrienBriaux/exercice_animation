@@ -13,7 +13,6 @@
             animation: check-translate 1000ms;
 
             i {
-                transform : rotate(360deg);
                 animation: check-rotate 3000ms;
             }
         }
@@ -24,7 +23,6 @@
             transform: translateX(100%);
 
             i {
-                transform : rotate(0deg);
                 transition: transform 600ms;
             }
         }
@@ -58,10 +56,10 @@
 
 @keyframes check-rotate {
     0% {
-        transform: rotate(100%);
+        transform: rotate(0);
     }
 
     100% {
-        transform: rotate(0);
+        transform: rotate(360deg);
     }
 }
