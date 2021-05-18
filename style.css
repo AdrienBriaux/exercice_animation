@@ -8,9 +8,12 @@
 }
 .box:hover .element2 {
   display: flex;
+  transform: translateX(-100%);
+  transition: transform 600ms;
 }
 .box:not(:hover) .element2 {
   display: none;
+  transform: translateX(0);
 }
 .box .element2 {
   background-color: red;
